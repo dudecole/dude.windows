@@ -1,0 +1,14 @@
+---
+- hosts: localhost
+  connection: local
+
+  tasks: 
+  - name: hello world
+    ping:
+    register: ping_results
+
+  - name: debug ping_results
+    debug:
+      var: ping_results
+
+
